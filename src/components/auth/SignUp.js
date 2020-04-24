@@ -20,7 +20,7 @@ class SignIn extends Component {
         return(
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="white">
-                    <h5 className="white">SignIn</h5>
+                    <h5 className="white">SignUp</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" onChange={this.handleChange}/>
@@ -31,11 +31,11 @@ class SignIn extends Component {
                     </div>
                     <div className="input-field">
                         <label htmlFor="firstName">firstName</label>
-                        <input type="firstName" id="firstName" onChange={this.handleChange}/>
+                        <input type="text" id="firstName" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <label htmlFor="lastName">lastName</label>
-                        <input type="lastName" id="lastName" onChange={this.handleChange}/>
+                        <input type="text" id="lastName" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <button className="">Login</button>
