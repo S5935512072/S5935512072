@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ProjectSummary = () => {
+const ProjectSummary = ({project}) => {
     return (
         <div>
         <div className="">
-            <spen className="">หัวข้อ</spen>
+            <spen className="">{project.title}</spen>
             <p>น้องหมาน่ารัก</p>
         </div>
     </div>
