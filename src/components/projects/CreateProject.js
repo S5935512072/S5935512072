@@ -24,8 +24,8 @@ class CreateProject extends Component {
         if (!auth.uid) return <Redirect to='/signin' />
         return(
             <div className="container">
-                <form onSubmit={this.handleSubmit} className="white">
-                    <h5 className="white">หัวข้อ</h5>
+                <form onSubmit={this.handleSubmit} className="boxSignin">
+                    <h5 >Topic (หัวข้อ)</h5>
                     <div className="input-field">
                         <label htmlFor="title">หัวข้อ</label>
                         <input type="text" id="title" onChange={this.handleChange}/>
@@ -35,7 +35,7 @@ class CreateProject extends Component {
                         <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
                         </div>
                     <div className="input-field">
-                        <button className="">บันทึก</button>
+                        <button className="btn orange lighten-1 z-depth-0">บันทึก</button>
                     </div>
                 </form>
             </div>

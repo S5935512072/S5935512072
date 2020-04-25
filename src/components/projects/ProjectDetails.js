@@ -9,10 +9,10 @@ const ProjectDetails = (props) => {
     if (!auth.uid) return <Redirect to='/signin' />
     if (project) {
         return (
-         <div>
-            <div>
-        <div className="">
-            <spen className="">{project.title}</spen>
+         <div className="container">
+            <div className="boxSignin">
+        <div >
+            <spen >{project.title}</spen>
             <p>{project.content}</p>
         </div>
         <div>
