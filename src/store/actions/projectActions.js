@@ -6,8 +6,8 @@ export const createProject = (project) => {
         const authorId = getState().firebase.auth.uid;
         firestore.collection('projects').add({
             ...project,
-           authorFirstName: 'few',
-           authorLastName: 'feww',
+           authorFirstName: profile.firstName,
+           authorLastName: profile.lastName,
            authorId: authorId,
            createdAt: new Date() 
         }).then(() => {
@@ -18,4 +18,6 @@ export const createProject = (project) => {
         
     }
 };
+
+//ฟังก์ชันนี้ค่อยกลับมาแก้ 
 

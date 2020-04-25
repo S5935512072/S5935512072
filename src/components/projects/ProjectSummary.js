@@ -5,7 +5,7 @@ const ProjectSummary = ({project}) => {
         <div>
         <div className="">
             <spen className="">{project.title}</spen>
-            <p>น้องหมาน่ารัก</p>
+            <p>Posted by {project.authorFirstName} {project.authorLastName}</p>
         </div>
     </div>
     )
