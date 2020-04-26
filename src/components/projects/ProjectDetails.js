@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
+import { Badge } from 'reactstrap';
 
 const ProjectDetails = (props) => {
     const { project, auth } = props;
@@ -12,11 +13,12 @@ const ProjectDetails = (props) => {
          <div className="container">
             <div className="boxSignin">
         <div >
+        <Badge color="primary" pill>สมุดโน้ต</Badge><br />
             <spen >{project.title}</spen>
             <p>{project.content}</p>
         </div>
         <div>
-        <div>Posted by {project.authorFistName} {project.authorLastName}</div>
+        <div>บันทึกข้อความโดย {project.authorFistName} {project.authorLastName}</div>
         </div>
     </div>
         </div>

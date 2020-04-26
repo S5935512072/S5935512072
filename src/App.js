@@ -7,6 +7,7 @@ import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject"
 import CreateBook from "./components/projects/CreateBook"
+import CreateBook1 from "./components/projects/CreateBook1"
 import "./App.css"
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
          <Route  path='/signup' component={SignUp} />
          <Route  path='/create' component={CreateProject} />
          <Route  path='/book' component={CreateBook} />
+         <Route  path='/book1' component={CreateBook1} />
          </Switch>
         </div>
       </BrowserRouter>

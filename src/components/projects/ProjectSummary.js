@@ -9,7 +9,7 @@ const ProjectSummary = ({project}) => {
                     <spen className="card-name">{project.title}</spen>
                 </form>
                 <form className="box-name">
-                    <p className="card-post1">Posted by {project.authorFirstName} {project.LastName}</p>
+                    <p className="card-post1">บันทึกข้อความโดย {project.authorFirstName} {project.LastName}</p>
                    
                 </form>
             </form>
