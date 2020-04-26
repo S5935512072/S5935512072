@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { signIn } from "../../store/actions/authActions";
 import { Redirect } from "react-router-dom";
 import "./signin.css";
+import {  NavLink } from "reactstrap";
 
 class SignIn extends Component {
   state = {
@@ -40,6 +41,13 @@ class SignIn extends Component {
             </div>
           </div>
         </form>
+        <div className="footer text-footer">
+          <p>Surasak Noorurk</p>
+          <p> miniProject 5935512072 Computer Engineering</p>
+          <NavLink href="https://surasak783023869.wordpress.com/">
+            ช่องทางการติดต่อ
+          </NavLink>
+        </div>
       </div>
     );
   }
