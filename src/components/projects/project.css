@@ -71,3 +71,9 @@
     padding: 20px;
     color: #000000;
 }
+.calen {
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -9,6 +9,7 @@ const SignedInLinks = (props) => {
            <li><NavLink to='/'>หน้าหลัก</NavLink></li>
            <li><NavLink to='/book'>หนังสือ</NavLink></li>
            <li><NavLink to='/create'>จดบันทึก</NavLink></li>
+           <li><NavLink to='/calender'>ปฏิทิน</NavLink></li>
            <li><a onClick={props.signOut}>Log Out</a></li>
 
        </ul>

@@ -8,6 +8,7 @@ import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject"
 import CreateBook from "./components/projects/CreateBook"
 import CreateBook1 from "./components/projects/CreateBook1"
+import CreateCalender from "./components/projects/CreateCalender"
 import "./App.css"
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
          <Route  path='/create' component={CreateProject} />
          <Route  path='/book' component={CreateBook} />
          <Route  path='/book1' component={CreateBook1} />
+         <Route  path='/calender' component={CreateCalender} />
          </Switch>
         </div>
       </BrowserRouter>
